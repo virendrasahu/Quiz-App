@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/brain.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a8d1648084.js" crossorigin="anonymous"></script>
+
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-container">
+        <!-- Start Screen -->
+        <div class="first-page pt-5 pb-5" id="firstPage">
+            <h1 class="main-heading">Quiz Master Pro</h1>
+            <p class="main-para">Test your knowledge and climb the ranks! Choose your difficulty and get started.</p>
+            <h1 class="main-heading2">Choose Your Challenge</h1>
+            <button id="easyQuiz" class="quiz-btn green-btn">Easy Peasy</button>
+            <button id="mediumQuiz" class="quiz-btn orange-btn">Medium Rare</button>
+            <button id="hardQuiz" class="quiz-btn red-btn">Hard Boiled</button>
+            <button id="startBtn" class="btn btn-primary start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Question Container -->
+        <div class="question-cont mt-4" id="questionCont" style="display: none;">
+            <div class="d-flex items-center justify-content-between">
+                <p class="text-white">Difficult: <span id="difficultyLabel" class="diffi-level">Easy</span></p>
+                <p class="timer-para" id="timer"><i class="fa-regular fa-clock mr-3"></i>01:30</p>
+            </div>
+            <div class="progress">
+                <p class="fill-progress" id="progressBar"></p>
+            </div>
+            <div class="quiz-question mt-3">
+                <p class="no-of-question" id="questionNumber">Question 1 of 5</p>
+                <h1 class="question" id="questionText">Which animal says "moo"?</h1>
+                <button class="options" id="option1">A. Dog</button>
+                <button class="options" id="option2">B. Cat</button>
+                <button class="options" id="option3">C. Cow</button>
+                <button class="options" id="option4">D. Sheep</button>
+            </div>
+        </div>
+
+        <!-- Result Container -->
+        <div class="result-container mt-5 mb-5" id="resultCont" style="display: none;">
+            <div>
+                <i class="fa-solid fa-square-poll-vertical result-icon"></i>
+                <h1 class="result-heading">Quiz Complete</h1>
+                <p class="result-para">Good Effort!</p>
+            </div>
+            <div class="result-display">
+                <h1 class="score-title">Your Score: <span class="num" id="score">0</span> / 5</h1>
+                <p class="result-percent" id="percent">0%</p>
+                <p class="difficulty" id="difficultyResult">Difficulty: Easy</p>
+            </div>
+
+            <div class="congrats-cont">
+                <p class="congrates-para">Congratulations! You made the high score list!</p>
+                <input class="form-control" type="text" id="nameInput" placeholder="Enter Your Name">
+                <button class="quiz-btn save-btn" id="saveBtn">Save Score</button>
+            </div>
+
+            <button class="play-again btn btn-primary" id="playAgainBtn">
+                <i class="fa-solid fa-arrows-rotate"></i> Play Again
+            </button>
+
+            <!-- <button class="play-again btn btn-primary" id="viewScoresBtn">
+                <i class="fa-solid fa-trophy mr-1"></i> View High Scores
+            </button> -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

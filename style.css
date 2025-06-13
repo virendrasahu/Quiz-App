@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.bg-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    overflow: auto;
+}
+.first-page{
+    background-color: #3d4871;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    height: 80%;
+}
+@media screen and (min-width:768px) {
+    .first-page{
+        width: 40%;
+        height: 80%;
+    }
+}
+.main-heading{
+    color: rgb(169, 169, 252);
+    font-family: 'poppins';font-size: 36px;
+}
+.main-para{
+    color: rgb(206, 206, 255);
+    font-family: 'poppins';
+    font-size: 14px;
+}
+.main-heading2{
+    color: rgb(169, 169, 252);
+    font-family: 'poppins';
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.quiz-btn{
+    padding: 10px;
+    width: 90%;
+    color: #fff;
+    border-radius: 8px;
+    border-style: solid;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.green-btn{
+    background-color: rgb(127, 210, 127);
+    border-color: rgb(199, 252, 199);
+}
+.orange-btn{
+    background-color: rgb(253, 170, 16);
+    border-color: rgb(247, 218, 165);
+}
+.red-btn{
+    background-color:red;
+    border-color: rgb(255, 192, 192);
+}
+
+.scale-option{
+    transform: scale(1.05);
+    transition: all 0.1s ease;
+}
+.start-btn{
+    color: #fff;
+    background-color: rgb(94, 94, 255);
+    width: 90%;
+}
+.start-btn:hover{
+    color: #fff;
+}
+
+/* Questions Container */
+
+.question-cont{
+    background-color: #374165;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+}
+@media screen and (min-width: 768px) {
+    .question-cont{
+        width: 40%;
+    }
+}
+.diffi-level{
+    color: rgb(167, 180, 255);
+}
+.timer-para{
+    background-color: #4c576f;
+    padding:6px 10px;
+    color: rgb(149, 229, 255);
+    border-radius: 8px;
+    font-weight: bold;
+}
+.progress{
+    height: 9px;
+    background-color: #4c576f;
+    border-radius: 8px;
+}
+.fill-progress{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(0, 191, 255);
+    border-radius: 8px;
+}
+.quiz-question{
+    padding: 15px;
+    background-color: #4c576f;
+    border-radius: 8px;
+}
+.no-of-question{
+    color: rgb(0, 149, 255);
+}
+.question{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.options{
+    width: 100%;
+    background-color: #909cb5;
+    padding: 6px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border-color: #b3bed8;
+    border-width: 1px;
+    border-style: solid;
+    text-align: left;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Result section */
+
+.result-container{
+    margin-top: 20px;
+    background-color: #374165;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .result-container{
+        width: 40%;
+    }
+}
+.result-icon{
+    font-size: 30px;
+    color: yellow;
+}
+.result-heading{
+    margin-top: 10px;
+    color: rgb(169, 169, 252);
+    font-family: 'poppins';
+    font-size: 28px;
+    font-weight: bold;
+}
+.result-para{
+    font-size: 14px;
+    color: #cbdaff;
+}
+.result-display{
+    padding: 10px;
+    background-color: #4c576f;
+    border-radius: 8px;
+}
+.score-title{
+    color: white;
+    font-size: 16px;
+}
+.num{
+    color: lightgreen;
+}
+.result-percent{
+    color: lightgreen;
+    font-size: 24px;
+    font-weight: 600;
+}
+.difficulty{
+    font-size: 14px;
+    color: #cbdaff;
+}
+
+.congrats-cont{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4c576f;
+    border-radius: 8px;
+}
+.congrates-para{
+    color: yellow;
+    font-weight: bold;
+}
+.form-control{
+    background-color: #909cb5;
+}
+.save-btn{
+    width: 100%;
+    margin-top: 15px;
+    background-color: rgb(68, 255, 68);
+    border-color: rgb(199, 252, 199);
+}
+.play-again{
+    color: #fff;
+    margin-top: 15px;
+    width: 100%;
+}
