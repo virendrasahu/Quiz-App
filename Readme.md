@@ -55,7 +55,7 @@ quiz-app/
 ├── style.css
 ├── script.js
 ├── assets/
-│   └── ![quiz-preview.png](img/brain.png) 
+│   └── ![quiz-preview.png](img/brain1.png) 
 └── README.md
 
 📷 Screenshots
